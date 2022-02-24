@@ -1,0 +1,114 @@
+/* Global Vars */
+
+:root {
+  --light-theme-clr: #ff9800;
+  --dark-theme-clr: #c57600;
+  --trans: 0.5s;
+  --pad: 80px;
+}
+body {
+  height: 4000px;
+}
+/* navbar */
+.navbar-brand {
+  color: white !important;
+  font-size: 30px;
+}
+.navbar-brand span:first-child,
+header h1 span:first-child {
+  color: var(--light-theme-clr);
+}
+.navbar-brand span:last-child,
+header h1 span:last-child {
+  color: var(--dark-theme-clr);
+}
+
+.navbar-toggle i {
+  transition: all var(--trans);
+  color: var(--light-theme-clr);
+}
+
+.scrolled {
+  opacity: 0.95;
+}
+.navbar {
+  margin-bottom: unset;
+  /* top: 94.5vh; */
+}
+
+/* Header */
+header {
+  background: url(https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+    no-repeat top center / cover;
+  height: calc(85vh - 52px);
+  padding-top: calc(var(--pad) * 1.5);
+
+  position: relative;
+}
+header::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.52);
+  top: 0;
+}
+header h1 {
+  margin-top: 0;
+  font-size: 100px;
+  color: white;
+}
+header p.lead {
+  position: relative;
+  margin-bottom: 100px;
+  color: white;
+  font-size: 36px;
+}
+header p.lead::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  background-color: white;
+  height: 3px;
+  bottom: -50px;
+  left: 0;
+}
+header p:nth-of-type(2) {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #adadad;
+  margin-bottom: 50px;
+}
+header .btn-default {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  padding: 7px 25px;
+}
+
+header form {
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+header h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+header h2 span {
+  color: var(--light-theme-clr);
+}
+header .form-control {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #dddddd98;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+header form input[type="submit"] {
+  background-color: var(--light-theme-clr);
+  color: white;
+  padding: 10px 0;
+}

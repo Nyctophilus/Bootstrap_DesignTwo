@@ -1,0 +1,21 @@
+/* Bootstrap NAVBAR */
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: unset;
+  color: #9d9d9d;
+}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-nav > li:hover {
+  background-color: var(--theme-clr);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: #101010;
+}
+.dropdown-menu > li > a {
+  color: #9d9d9d;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: var(--theme-clr);
+}
