@@ -19,6 +19,17 @@ $(function () {
       navbar.removeClass("scrolled");
     }
   });
+
+  // tabs active
+  $(".tab-switch li").click(function () {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+
+    $(".tabs .tabs-content > div").hide();
+    $("." + $(this).data("class")).show();
+  });
 });
 
 // test when reach the navbar stick it to top
